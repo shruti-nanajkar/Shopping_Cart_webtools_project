@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Account page</title>
+    <title>Ecommerce Website</title>
 
     <!-- Bootstrap Core css -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -163,172 +163,89 @@ toggling -->
     </div>
 
 
-    <!-- page content -->
-    <div id="content" class="container">
-
-      <div class="row">
-        <div class="col-md-3">
-          <h3 class="">Manage Orders</h3>
-          <div class="list-group">
-            <a href="account.html" class="list-group-item">All orders</a>
-            <a href="account.html" class="list-group-item">Manage feedback</a>
-            <a href="account.html" class="list-group-item">My coupons</a>
-            <a href="acoount.html" class="list-group-item">My shipping address</a>
-          </div>
-        </div>
-      </div>
-<!--order Status-->
-      <h3 class="">Order Status</h3>
-      <!--1st order-->
-      <div class="thumbnail">
+    <!-- Define the product Categories -->
+      <hr />
         <div class="row">
-          <div class="col-sm-1">
-            <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+          <div class="col-sm-4 col-md-3">
+            <h3> Categories </h3>
+            <div class="list-group">
+              <a href="category.html" class="list-group-item">Apparel & Accessories</a>
+              <a href="category.html" class="list-group-item">Baby Products</a>
+              <a href="category.html" class="list-group-item">Beauty & Health</a>
+              <a href="category.html" class="list-group-item">Electronics</a>
+              <a href="category.html" class="list-group-item">Furniture</a>
+              <a href="category.html" class="list-group-item">Home & Garden</a>
+              <a href="category.html" class="list-group-item">Luggage & Bags</a>
+              <a href="category.html" class="list-group-item">Shoes</a>
+              <a href="category.html" class="list-group-item">Sports & Entertainment</a>
+              <a href="category.html" class="list-group-item">Watches</a>
+            </div>
           </div>
-          <div class="col-sm-4">
-            <a href="product.html">Product Name</a>
+            <!--grids-->
+            <!--product 1-->
+          <div class="col-sm-8 col-md-9">
+            <div class="row">
+              <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/750x600" alt="">
+                  <div class="add-to-cart">
+                    <a href="#" class="glyphicon glyphicon-plus-sign" data-toggle="tooltip" data-placement="top" title="Add to cart"></a>
+                  </div>
+                  <div class="caption">
+                    <h4 class="pull-right">$24.99</h4>
+                    <h4><a href="product.html">1<sup>st</sup> Product</a></h4>
+                    <p>A short description about a product</p>
+                    <div class="ratings">
+                      <p class="pull-right"><a href="product.html#comments">15 reviews</a></p>
+                      <p>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-1">
-            1
-          </div>
-          <div class="col-sm-2">
-            $49.99
-          </div>
-          <div class="col-sm-2">
-            <button class="btn btn-sm btn-default">Track</button>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">1 Message</a>
-          </div>
+
+          <!-- other products grids -->
         </div>
+        </div><!-- .container class with content as the id -->
+
+
+        <!--pagination-->
+        <div class="col-sm-12" align="center">
+          <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+
+      <!-- Footer -->
+      <div class="container">
+        <hr/>
+        <footer>
+          <div class="row">
+            <div class="col-lg-12">
+              <p align="center">Copyright &copy; <a href="ecommerce.html">Shruti Nanajkar</a></p>
+            </div>
+          </div>
+        </footer>
       </div>
 
-      <!--2nd order-->
-      <div class="thumbnail">
-        <div class="row">
-          <div class="col-sm-1">
-            <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
-          </div>
-          <div class="col-sm-4">
-            <a href="product.html">Product Name</a>
-          </div>
-          <div class="col-sm-1">
-            1
-          </div>
-          <div class="col-sm-2">
-            $19.99
-          </div>
-          <div class="col-sm-2">
-            <button class="btn btn-sm btn-success">Completed</button>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">1 Message</a>
-          </div>
-        </div>
-      </div>
-
-      <!--3rd order-->
-      <div class="thumbnail">
-        <div class="row">
-          <div class="col-sm-1">
-            <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
-          </div>
-          <div class="col-sm-4">
-            <a href="product.html">Product Name</a>
-          </div>
-          <div class="col-sm-1">
-            1
-          </div>
-          <div class="col-sm-2">
-            $49.99
-          </div>
-          <div class="col-sm-2">
-            <button class="btn btn-sm btn-danger">Cancelled</button>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">0 Message</a>
-          </div>
-        </div>
-      </div>
-
-      <!--4th order-->
-      <div class="thumbnail">
-        <div class="row">
-          <div class="col-sm-1">
-            <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
-          </div>
-          <div class="col-sm-4">
-            <a href="product.html">Product Name</a>
-          </div>
-          <div class="col-sm-1">
-            1
-          </div>
-          <div class="col-sm-2">
-            $49.99
-          </div>
-          <div class="col-sm-2">
-            <button class="btn btn-sm btn-default">Track</button>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">1 Message</a>
-          </div>
-        </div>
-      </div>
-
-      <!--5th order-->
-      <div class="thumbnail">
-        <div class="row">
-          <div class="col-sm-1">
-            <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
-          </div>
-          <div class="col-sm-4">
-            <a href="product.html">Product Name</a>
-          </div>
-          <div class="col-sm-1">
-            1
-          </div>
-          <div class="col-sm-2">
-            $49.99
-          </div>
-          <div class="col-sm-2">
-            <button class="btn btn-sm btn-success">Completed</button>
-          </div>
-          <div class="col-sm-2">
-            <a href="#">1 Message</a>
-          </div>
-        </div>
-      </div>
-      <!--pagination-->
-      <div class="col-sm-12" align="center">
-        <ul class="pagination">
-          <li class="disabled"><a href="#">&laquo;</a></li>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">&raquo;</a></li>
-        </ul>
-      </div>
-  </div><!--div element with the content as the id and a .container class -->
-
-    <!-- Footer -->
-    <div class="container">
-      <hr/>
-      <footer>
-        <div class="row">
-          <div class="col-lg-12">
-            <p align="center">Copyright &copy; <a href="ecommerce.html">Shruti Nanajkar</a></p>
-          </div>
-        </div>
-      </footer>
-    </div>
 
 
 
+      <!-- jQuery Version 1.11.0 -->
+      <script src="js/jquery-1.11.1.js"></script>
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.1.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.js"></script>
